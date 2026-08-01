@@ -1,7 +1,26 @@
 aid: resortpass
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/resortpass.png
 name: ResortPass
-description: 'ResortPass is a company surfaced as a portfolio company of crv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'ResortPass is a consumer travel and hospitality marketplace that lets
+  people book hotel and resort day passes — pool access, spa treatments, cabanas,
+  fitness centers, and day rooms — at over 2,000 hotels without an overnight stay,
+  starting around $25. Guests search by city and date, book a pass, and enjoy resort
+  amenities for the day, while partner hotels monetize otherwise-idle amenity capacity.
+  Surfaced as a portfolio company of CRV and added to the API Evangelist network. No
+  public developer API, API documentation, or developer portal was found during
+  enrichment; the company operates a consumer web/mobile booking product and a hotel
+  partner program.'
 url: https://raw.githubusercontent.com/api-evangelist/resortpass/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Travel
+- Hospitality
+- Hotels
+- Booking
+- Marketplace
+- Leisure
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/resortpass-domain-security.yml
 - type: Website
   url: https://www.resortpass.com/
+- type: Blog
+  url: https://www.resortpass.com/blog
+- type: Support
+  url: https://kb.resortpass.com/
+- type: TermsOfService
+  url: https://www.resortpass.com/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.resortpass.com/privacy-policy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
